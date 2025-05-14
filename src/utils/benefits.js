@@ -1,13 +1,11 @@
-export function classifyBenefit (description) {
-    const = categories {
-        Alimentação: ["restaurante", "supermercado", "padaria"],
-        Saúde: ["farmácia", "hospital", "clínica"],
-        Transporte: ["uber", "taxi", "ônibus"],
-        Cultura: ["cinema", "teatro", "museu"],
-        Educação: ["cursos", "universidade", "biblioteca"],        
-    };
+export function classifyBenefit(description) {
+  const categories = {
+    "Alimentação": ["restaurante", "supermercado", "padaria"],
+    "Saúde": ["farmácia", "hospital", "clínica"],
+    "Transporte": ["uber", "táxi", "ônibus"],
+    "Cultura": ["cinema", "teatro", "museu"],
+    "Outros": []
+  };
 
-//Implementando a lógica
-
-return "A Implementar";
+  return "A implementar";
 }
