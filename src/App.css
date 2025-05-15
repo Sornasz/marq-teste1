@@ -1,42 +1,99 @@
-#root {
-  max-width: 1280px;
+body {
+  background-color: #0003c4;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #0003c4;
+  min-height: 100vh;
+  
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  flex: 1;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #0003c4;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.3);
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0003c4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  background: #0003c4;
+  border-left: 4px solid #00acc1;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px;
+  background-color: #0003c4;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border-left: 3px solid #6179ff;
+}
+
+h1 {
   text-align: center;
+  color: #fcfafa;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+h3 {
+  margin-top: 20px;
+  color: #000000;
 }
