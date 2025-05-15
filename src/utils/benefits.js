@@ -9,4 +9,11 @@ export function classifyBenefit(description) {
     "Outros": []
   };
 
-};
+  for (const [category, terms] of Object.entries(categories)) {
+    if (terms.some(term => normalizedDesc.includes(term))) {
+      return category;
+    }
+  }
+
+  return "Outros";
+}
