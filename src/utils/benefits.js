@@ -6,7 +6,7 @@ export function classifyBenefit(description) {
     "Saúde": ["farmácia", "hospital", "clínica", "médico", "dentista"],
     "Transporte": ["uber", "táxi", "ônibus", "metrô", "combustível"],
     "Cultura": ["cinema", "teatro", "museu", "livraria", "show"],
-    "Outros": []
+    "Outros": ["Academia", "Futebol", "Barbearia", "Happy Hour"]
   };
 
   for (const [category, terms] of Object.entries(categories)) {
@@ -17,3 +17,27 @@ export function classifyBenefit(description) {
 
   return "Outros";
 }
+
+
+export function calculateRemainingBalance (transactions) {
+    const initialBalance ={
+    "Alimentação": 1000,
+    "Saúde": 1000,
+    "Transporte": 1000,
+    "Cultura": 1000 ,
+    "Outros": 1000
+    };
+    
+    const remainingBalance = { ...initialBalance};
+
+     transactions.forEach(transaction => {
+    const { categoria, valor } = transaction;
+    
+    // Verifica se a categoria existe no objeto de saldo restante
+    if (categoria in remainingBalance(categoria)) {
+      remainingBalance[categoria] -= valor;
+    }
+  });
+
+  return remainingBalance;
+};
