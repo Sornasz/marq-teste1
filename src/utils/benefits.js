@@ -34,7 +34,7 @@ export function calculateRemainingBalance (transactions) {
     const { categoria, valor } = transaction;
     
     // Verifica se a categoria existe no objeto de saldo restante
-    if (categoria in remainingBalance(categoria)) {
+    if (categoria in remainingBalance) {
       remainingBalance[categoria] -= valor;
     }
   });
