@@ -36,6 +36,7 @@ function App() {
   return (
     <div className="app-container">
       <h1>Sistema de Benefícios</h1>
+        <h2>MarQ HR</h2>
 
       <div className="section">
         <h2>1. Classificação de Benefício</h2>
